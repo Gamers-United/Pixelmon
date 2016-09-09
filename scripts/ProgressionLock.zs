@@ -27,4 +27,25 @@ recipes.remove(<tconstruct:soil>);
 recipes.addShaped(<tconstruct:soil> * 16, [[comp, sand, comp], [sand, clay, sand], [comp, sand, comp]]);
 //add fun tooltips to botania
 <botania:manaResource:7>.addTooltip("My mum's full of luncrite magic.");
-<botania:manaResource>.addTooltip("My brother loves the term 'Yo Mama' This is the cloest i got find.");
+<botania:manaResource>.addTooltip("My brother loves the term 'Yo Mama' This is the cloest i could find.");
+//lock immersive engineering.
+
+//vals
+val creosote = <forge:bucketFilled>.withTag({FluidName: "creosote", Amount: 1000, ForgeCaps: {}}});
+val cokebrick = <immersiveengineering:stoneDecoration>;
+val clayb = <minecraft:clay_ball>;
+val brick = <minecraft:brick>;
+val bricks = <minecraft:brick_block>;
+val material9 = <immersiveengineering:material:9>;
+val steel = <ore:ingotSteel>;
+
+
+//coke oven brick
+recipes.remove(cokebrick);
+recipes.addShaped(cokebrick, [[clayb, brick, clayb], [brick, comp, brick], [clayb, brick, clayb]]);
+//material:9
+recipes.remove(material9);
+recipes.addShaped(material9, [[steel, comp, steel], [null, steel, null], [steel, null, steel]]);
+
+
+
