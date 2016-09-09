@@ -3,7 +3,7 @@
 //vals
 val stoneslab = <minecraft:stone_slab:3>;
 val stone = <minecraft:cobblestone>;
-val comp = <techreborn:computercube>;
+val comp = <ic2:resource:13>;
 val dmana = <botania:pool:2>;
 val sand = <minecraft:sand>;
 val clay = <minecraft:clay>;
